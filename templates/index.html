@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPK Hipertensi</title>
+</head>
+<body>
+    <h1>Daftar Pasien</h1>
+    <ul>
+        {% for p in pasien %}
+            <li>{{ p.nama }} - Sistolik: {{ p.tekanan_sistolik }}, Diastolik: {{ p.tekanan_diastolik }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/hitung">Hitung Prioritas</a>
+</body>
+</html>

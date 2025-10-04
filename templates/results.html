@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil SPK SAW</title>
+</head>
+<body>
+    <h1>Hasil Prioritas Hipertensi</h1>
+    <ol>
+        {% for h in hasil %}
+            <li>{{ h.nama }} - Skor: {{ h.skor }}</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Kembali</a>
+</body>
+</html>
