@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPK Hipertensi</title>
+</head>
+<body>
+    <h1>Daftar Pasien</h1>
+    <ul>
+        {% for p in pasien %}
+            <li>{{ p.nama }} - Sistolik: {{ p.tekanan_sistolik }}, Diastolik: {{ p.tekanan_diastolik }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Tambah Pasien</h2>
+    <form method="POST" action="/tambah_pasien">
+        Nama: <input type="text" name="nama" required>
+        Usia: <input type="text" name="number" required>
+        <button type="submit">Tambah</button>
+        </form>
+    <a href="/hitung">Hitung Prioritas</a>
+    <a herf="/input_nilai">Input Nilai pasien</a>
+    <a herf="/tambah_kriteria">Hitung prioritas</a>
+</body>
+</html>

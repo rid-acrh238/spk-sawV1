@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tambah Kriteria</title></head>
+<body>
+<h1>Tambah Kriteria</h1>
+<form method="POST" action="/tambah_kriteria">
+    Nama: <input type="text" name="nama" required>
+    Bobot: <input type="number" step="0.01" name="bobot" required>
+    Jenis: 
+    <select name="jenis">
+        <option value="benefit">Benefit</option>
+        <option value="cost">Cost</option>
+    </select>
+    <button type="submit">Tambah</button>
+</form>
+<a href="/">Kembali</a>
+</body>
+</html>
